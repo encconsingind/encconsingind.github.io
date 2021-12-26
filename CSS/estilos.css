@@ -1,4 +1,69 @@
-body{
-    background: #000000;
-    color: #fff;
+*{
+    margin: 0px;
+    padding: 30px;
+    color: white;
 }
+
+
+body{
+    background: rgba(6, 61, 145, 0.87);
+    font-family: 'Times New Roman', Times, serif;
+}
+#container{
+    width: 100%;
+    margin: 0px auto;
+}
+
+header{
+    background: rgb(241, 171, 40);
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+
+}
+
+h4{
+    background: rgb(166, 231, 81);
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    line-height: 20px;
+    color: black;
+}
+
+p{
+    padding: 30px;
+    margin: 0px;
+    border: white;
+    text-align: justify;
+
+}
+
+input{
+    color: black;
+}
+
+table{
+    background: rgb(74, 182, 209);
+    color: black;
+}
+
+#tableimagen{
+    background: rgb(74, 182, 209);
+    color: black;
+    padding: none;
+}
+
+#boton{
+    background: rgb(74, 182, 209);
+    font-family: 'Times New Roman', Times, serif;
+    font-size-adjust: inherit;
+}
+
+.radio{
+    cursor: pointer;
+}
+
