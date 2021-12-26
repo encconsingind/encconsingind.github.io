@@ -1,158 +1,23 @@
 *{
-    margin: 0px;
-    padding: 30px;
-    color: white;
-}
-
-
-body{
-    background: rgba(6, 61, 145, 0.87);
-    font-family: 'Times New Roman', Times, serif;
-}
-#container{
-    width: 100%;
-    margin: 0px auto;
-}
-
-header{
-    background: rgb(241, 171, 40);
-    height: 100px;
-    width: 100%;
-    margin: 0px;
-    text-align: center;
-    line-height: 100px;
-    color: white;
-
+    background: whitesmoke;
 }
 
 h4{
-    background: rgb(166, 231, 81);
-    height: 20px;
-    width: 100%;
-    text-align: center;
-    line-height: 20px;
-    color: black;
-}
-
-p{
-    padding: 30px;
-    margin: 0px;
-    border: white;
-    text-align: justify;
-
-}
-
-input{
-    color: black;
-}
-
-table{
-    background: rgb(74, 182, 209);
-    color: black;
-}
-
-#tableimagen{
-    background: rgb(74, 182, 209);
-    color: black;
-    padding: none;
+    background: rgb(79, 153, 223);
 }
 
 #boton{
-    background: rgb(74, 182, 209);
-    font-family: 'Times New Roman', Times, serif;
-    font-size-adjust: inherit;
-}
-
-#show-modal{
-    text-align: center;
-    background: #bc651a;
-    padding: 5px 5px;
+    background: cadetblue;
     color: white;
-    font-weight: 500;
-    font-size: 1.5em;
-    border-radius: 1px;
-    text-decoration: none;
-    transition: all 0.15s linear;
 }
 
-#show-modal:hover{
-    cursor: pointer;
-    background: #bc9d1a;
+#tableimagen{
+    border-color: turquoise;
 }
-.modal{
-    position:fixed;
-    top: -100vh;
-    left: 0;
-    z-index: 99999999;
-    background: rgba(0,0,0,0.75);
-    width: 100vw;
-    height: 100vh;
-    opacity: 0;
-    transition: opacity 0.35s ease;
+table{
+    border-color: turquoise;
 }
-
-.modal .content-modal{
-    width: 100%;
-    max-width: 500px;
-    position: fixed;
-    left: 50%;
-    top: -100vh;
-    transition: top 0.35s ease;
-    margin-left: -250px;
-    background:white;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-    border-radius: 2px;
-    z-index: 99999999;
+#Notas{
+    border-color: red;
 }
-
-.modal h2{
-    padding: 0.5em;
-    text-align: justify;
-    color: #444444;
-    margin: 0;
-
-}
-
-.modal article{
-    height: 300 px;
-    background: #bc651a;
-
-}
-.close-modal{
-    color: #e74c3c;
-    position: absolute;
-    top: 0.2em;
-    right: 0.375em;
-    margin: 0;
-    padding: 5px;
-    font-weight: bold;
-    font-size: 1.5em;
-    text-decoration: none;
-    }
-
-.modal a:hover{
-    color: #c0392b;
-
-
-}
-
-.modal:target{
-    opacity: 1;
-    top: 0;
-
-}
-
-.modal .btn-close-modal{
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 99999999;
-
-}
-.modal:target .content-modal{
-    top: 50px;
-    transition:  top 0.35s ease;
-}
-
 
