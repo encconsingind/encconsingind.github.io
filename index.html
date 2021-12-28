@@ -22,7 +22,7 @@
                 <img src="IMAGENES/lugar.png" width="70" height="70">
                 <h4 >SECCION 0: Datos iniciales</h4>
                 <label for="">Nombre de la persona que le compartio el formulario</label><br>    
-                <input type="text" name="data[encuestador]" value=""  required>
+                <input size="50px" id="ayudatext" type="text" name="data[encuestador]" value=""  required>
                 <br><br>
                 
         
@@ -34,7 +34,7 @@
         
                 
                 <label for="">Dirección del encuestado </label><br>
-                    <input placeholder="Solo calle y/o zona" type="text" name="data[direccion]" value="" 
+                    <input size="80px" id="ayudatext" placeholder="Solo calle y/o zona" type="text" name="data[direccion]" value="" 
                     >
                 <br><br>
         
@@ -87,7 +87,7 @@
                     <input type="radio" name="data[CA1]" value="6">Mallasa<br>
                     <input type="radio" name="data[CA1]" value="7">Centro<br>
                     <input type="radio" name="data[CA1]" value="8">Otro:
-                <input type="text" placeholder="Especificar" name="data[CA1a]" value="">
+                <input id="ayudatext" type="text" placeholder="Especificar" name="data[CA1a]" value="">
                     
                 <br><br>
         
@@ -111,7 +111,7 @@
                     <input type="radio" name="data[CA2]" value="4">Tienda de Barrio<br>
                     <input type="radio" name="data[CA2]" value="5">Supermercados<br>
                     <input type="radio" name="data[CA2]" value="6" >Otro:
-                    <input type="text" placeholder="Especificar" name="data[CA2a]" value="">
+                    <input id="ayudatext" type="text" placeholder="Especificar" name="data[CA2a]" value="">
                     <!--Completar con un espacio para llenado-->
                 <br><br>
         
@@ -171,49 +171,35 @@
                         <th colspan="3">Nota</th>
                     </tr>
                     <tr>
-                        <td colspan="3">Recuerde que la sumatoria debe dar un 100%, solo puede ingresar numeros.
+                        <td colspan="3">Recuerde que la sumatoria debe dar un 100%, solo puede ingresar numeros y debe llenar todos los campos.
                         </td>
                     </tr>
             
                 </table></p>
                 
-                <input id="numero1" placeholder="Ingrese un número" type="number" name="data[NS5a]" required>Mercado Mayorista El Tejar<br>
-                <input id="numero2" placeholder="Ingrese un número" type="number" name="data[NS5b]" required>Mercado Minoristas (Ejem.Mercado Uruguay, Mercado Miraflores, Mercado Villa Fátima, Mercado Yungas)<br>
-                <input id="numero3" placeholder="Ingrese un número" type="number" name="data[NS5c]" required>Ferias Barriales (Ferias que solo ocurren 1 ó 2 veces por semana)<br>
-                <input id="numero4" placeholder="Ingrese un número" type="number" name="data[NS5d]" required>Tienda de Barrio<br>
-                <input id="numero5" placeholder="Ingrese un número" type="number" name="data[NS5e]" required>Supermercados<br>
-                <input id="numero6" placeholder="Ingrese un número" type="number" name="data[NS5f]">Otro:
-                <input type="text" placeholder="Especificar" name="data[NS5g]" value=""> <br><br>
-                <input id="btnsuma" type="button" name="name" value="VERIFICAR SUMA 100%" onclick="Pluss();">
+                <input max="100" id="numero1" placeholder="Ingrese un número" type="number" name="data[NS5a]" required oninput="calcular()">Mercado Mayorista El Tejar<br>
+                <input max="100" id="numero2" placeholder="Ingrese un número" type="number" name="data[NS5b]" required oninput="calcular()">Mercado Minoristas (Ejem.Mercado Uruguay, Mercado Miraflores, Mercado Villa Fátima, Mercado Yungas)<br>
+                <input max="100" id="numero3" placeholder="Ingrese un número" type="number" name="data[NS5c]" required oninput="calcular()">Ferias Barriales (Ferias que solo ocurren 1 ó 2 veces por semana)<br>
+                <input max="100" id="numero4" placeholder="Ingrese un número" type="number" name="data[NS5d]" required oninput="calcular()">Tienda de Barrio<br>
+                <input max="100" id="numero5" placeholder="Ingrese un número" type="number" name="data[NS5e]" required oninput="calcular()">Supermercados<br>
+                <input max="100" id="numero6" placeholder="Ingrese un número" type="number" name="data[NS5f]" oninput="calcular()">Otro:
+                <input id="ayudatext" type="text" placeholder="Especificar" name="data[NS5g]" value=""> <br><br>
+                <label>Total: </label> <input type="number" name="number" id="total" step="0.001"><br><br>
+                <!--<label>IMPORTANTE:</label> <input  size="100px" type="text" name="number" id="valor100" step="0.001"><br><br>-->
+                
+                <!--<input id="btnsuma" type="button" name="name" value="VERIFICAR SUMA 100%" onclick="Pluss();">-->
                 <p><table border="1px" id="Notas">
                     <tr>
                         <th colspan="3">IMPORTANTE</th>
                     </tr>
                     <tr>
-                        <td colspan="3"> Recuerde llenar todos los campos donde se menciona "Ingrese un número"
+                        <td colspan="3"> <input size="80px" type="text" name="number" id="valor100" step="0.001"><br><br>
                         </td>
                     </tr>
             
                 </table></p>
 
-                <script type="text/javascript">
-                    function Pluss()
-                    {
-                        var Num1=parseInt(document.getElementById('numero1').value);
-                        var Num2=parseInt(document.getElementById('numero2').value);
-                        var Num3=parseInt(document.getElementById('numero3').value);
-                        var Num4=parseInt(document.getElementById('numero4').value);
-                        var Num5=parseInt(document.getElementById('numero5').value);
-                        var Num6=parseInt(document.getElementById('numero6').value);
-                        var Result;
-                        Result=Num1+Num2+Num3+Num4+Num5+Num6;
-                        alert("El resultado es:"+Result);
-                    }
-
-
-                </script>
-
-            <br><br>
+                <br><br>
 
                 <!--Si es Si-->
                 <h4>SECCION III: Características logísticas de Papa, Cebolla y Tomate</h4><br>
@@ -329,7 +315,7 @@
                 <input type="radio" name="data[PCT3a]" value="4">1 arroba<br>
                 <input type="radio" name="data[PCT3a]" value="5">Mayor a 1 arroba<br>
                 <input type="radio" name="data[PCT3a]" value="6">Otro:
-                <input type="text" placeholder="Especificar" name="data[PCT3aa]" value="">
+                <input id="ayudatext" type="text" placeholder="Especificar" name="data[PCT3aa]" value="">
                 <br><br>
         
                 <label for="">5. ¿Qué cantidad de cebolla compra usualmente?</label><br>
@@ -339,7 +325,7 @@
                 <input type="radio" name="data[PCT3b]" value="4">1 arroba<br>
                 <input type="radio" name="data[PCT3b]" value="5">Mayor a 1 arroba<br>
                 <input type="radio" name="data[PCT3b]" value="6">Otro:
-                <input type="text" placeholder="Especificar" name="data[PCT3bb]" value="">
+                <input id="ayudatext" type="text" placeholder="Especificar" name="data[PCT3bb]" value="">
                 <br><br>
         
                 <label for="">6. ¿Qué cantidad de tomate compra usualmente?</label><br>
@@ -453,7 +439,7 @@
                     <input type="radio" name="data[B]" value="3">Mitad de una mano de banana (12 unidades)<br>
                     <input type="radio" name="data[B]" value="4">Menos de 12 unidades<br>
                     <input type="radio" name="data[B]" value="5">Otro:
-                    <input type="text" placeholder="Especificar" name="data[B1]" value="">
+                    <input id="ayudatext" type="text" placeholder="Especificar" name="data[B1]" value="">
                 <br><br>
         
                 <label for="">5. ¿Cuánto compra usualmente de manzana roja?</label><br>
@@ -463,7 +449,7 @@
                     <input type="radio" name="data[M]" value="4">Monton de 5 u x 10 Bs<br>
                     <input type="radio" name="data[M]" value="5">Montón de 6 u x 10 Bs<br>
                     <input type="radio" name="data[M]" value="6">Otro:
-                    <input type="text" placeholder="Especificar" name="data[M1]" value="">
+                    <input id="ayudatext" type="text" placeholder="Especificar" name="data[M1]" value="">
                    
                 <br><br>
                 
@@ -550,7 +536,7 @@
                 </table>
                 <br><br>
         
-                <label for="">7. En el momento de comprar banano, ¿En qué condiciones compra el producto?</label><br>
+                <label for="">7. En el momento de comprar banana, ¿En qué condiciones compra el producto?</label><br>
                 <table border="1px" id="tableimagen">
                     <tr>
                         <th><img src="IMAGENES/platano inma verde.jpg" width="100" height="100"></th>
@@ -616,7 +602,7 @@
                 <input type="radio" name="data[DC3]" value="5">Supermercados<br>
                 <input type="radio" name="data[DC3]" value="6">No compro en otro lugar<br>
                 <input type="radio" name="data[DC3]" value="7">Otro:
-                <input type="text" placeholder="Especificar" name="data[DC3a]" value="">
+                <input id="ayudatext" type="text" placeholder="Especificar" name="data[DC3a]" value="">
                 <br><br>
         
                 <label for="">4. Cuando su lugar habitual de compra de banana y manzana no se encuentra disponible ¿A qué otro lugar acude?</label><br>
@@ -627,7 +613,7 @@
                 <input type="radio" name="data[DC4]" value="5">Supermercados<br>
                 <input type="radio" name="data[DC4]" value="6">No compro en otro lugar<br>
                 <input type="radio" name="data[DC4]" value="7">Otro:
-                <input type="text" placeholder="Especificar" name="data[DC4a]" value="">
+                <input id="ayudatext" type="text" placeholder="Especificar" name="data[DC4a]" value="">
                 <br><br>
         
                 <label for="">5. ¿Le gustaría adquirir estos productos en su tienda de barrio más cercana?</label><br>
@@ -639,7 +625,7 @@
                 <input type="radio" name="data[DC6]" value="2">No venden los productos en la tienda<br>
                 <input type="radio" name="data[DC6]" value="3">Los productos no son frescos o estan muy guardados<br>
                 <input type="radio" name="data[DC6]" value="4">Otro:
-                <input type="text" placeholder="Especificar" name="data[DC6a]" value="">
+                <input id="ayudatext" type="text" placeholder="Especificar" name="data[DC6a]" value="">
                 <br><br>   
                 
                 <p><table border="1px" id="Notas">
@@ -686,4 +672,26 @@
         });
     </script>
 </body>
+    <script type="text/javascript">
+
+    function calcular() {
+        try {
+            var a=parseFloat(document.getElementById("numero1").value) || 0,
+            b=parseFloat(document.getElementById("numero2").value) || 0,
+            c=parseFloat(document.getElementById("numero3").value) || 0,
+            d=parseFloat(document.getElementById("numero4").value) || 0,
+            e=parseFloat(document.getElementById("numero5").value) || 0,
+            f=parseFloat(document.getElementById("numero6").value) || 0;
+
+            document.getElementById("total").value = a+b+c+d+e+f;
+        
+        } catch (e) {}
+        if(total.value==100){
+            document.getElementById("valor100").value = "Excelente la suma da 100%, verifica que llenaste todos los campos.";
+        }else{
+            document.getElementById("valor100").value = "La suma aun no llega al 100%, por favor verifica que llenaste todos los campos.";
+        }
+    }
+    </script>
+
 </html>
