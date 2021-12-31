@@ -160,7 +160,7 @@
                 <label for=""><b>3. Seleccione los productos que adquiere en su lugar de compra preferido</b></label><br>
                     <input type="checkbox" name="data[CA3a]" value="1">Papa<br>
                     <input type="checkbox" name="data[CA3b]" value="1">Cebolla roja<br>
-                    <input type="checkbox" name="data[CA3c]" value="1">Tomate<br>
+                    <input type="checkbox" name="data[CA3c]" value="1">Tomate tipo pera<br>
                     <input type="checkbox" name="data[CA3d]" value="1">Banana<br>
                     <input type="checkbox" name="data[CA3e]" value="1">Manzana roja<br>
                 <br><br>
@@ -270,8 +270,8 @@
                 <label for=""><b>1. Encuentra Papa, Cebolla y Tomate en el mismo mercado de su preferencia</b></label><br>
                 
                 
-                <input type="radio" name="data[Condicion]" value="1">Si<br>
-                <input type="radio" name="data[Condicion]" value="2">No<br><br>
+                <input type="radio" name="data[Condicion]" value="1">Si, los encuentro en el mismo mercado.<br>
+                <input type="radio" name="data[Condicion]" value="2">No, debo desplazarme a otros mercados por ciertos productos.<br><br>
 
                 <label for=""><b>2. ¿Cuántas veces a la semana acude al lugar de compra de su preferencia para comprar... </b></label><br>
                 
@@ -312,6 +312,12 @@
                         <td><input type="radio" name="data[PCT1b]" value="5"></td>
                         <td><input type="radio" name="data[PCT1c]" value="5"></td>
                     </tr>
+                    <tr>
+                        <td>No compra este producto</td>
+                        <td><input type="radio" name="data[PCT1a]" value="6"> </td>
+                        <td><input type="radio" name="data[PCT1b]" value="6"></td>
+                        <td><input type="radio" name="data[PCT1c]" value="6"></td>
+                    </tr>
                 </table><br><br>
 
                 <label for=""><b>3. ¿Cuál es la distancia a su lugar de preferencia para comprar... </b></label><br>
@@ -346,7 +352,12 @@
                         <td><input type="radio" name="data[PCT2b]" value="4"></td>
                         <td><input type="radio" name="data[PCT2c]" value="4"><br></td>
                     </tr>
-
+                    <tr>
+                        <td>No compra este producto</td>
+                        <td><input type="radio" name="data[PCT2a]" value="5"></td>
+                        <td><input type="radio" name="data[PCT2b]" value="5"></td>
+                        <td><input type="radio" name="data[PCT2c]" value="5"><br></td>
+                    </tr>
                 </table>
                 <br><br>
         
@@ -357,7 +368,8 @@
                 <input type="radio" name="data[PCT3a]" value="4">1 arroba<br>
                 <input type="radio" name="data[PCT3a]" value="5">Mayor a 1 arroba<br>
                 <input type="radio" name="data[PCT3a]" value="6" onclick="habilitar4()">Otro:
-                <input id="ayudatext4" type="text" placeholder="Especificar" name="data[PCT3aa]" value="" disabled="">
+                <input id="ayudatext4" type="text" placeholder="Especificar" name="data[PCT3aa]" value="" disabled=""><br>
+                <input type="radio" name="data[PCT3a]" value="7">No compra este producto<br>
                 <br><br>
         
                 <label for=""><b>5. ¿Qué cantidad de cebolla compra usualmente?</b></label><br>
@@ -367,7 +379,8 @@
                 <input type="radio" name="data[PCT3b]" value="4">1 arroba<br>
                 <input type="radio" name="data[PCT3b]" value="5">Mayor a 1 arroba<br>
                 <input type="radio" name="data[PCT3b]" value="6" onclick="habilitar5()">Otro:
-                <input id="ayudatext5" type="text" placeholder="Especificar" name="data[PCT3bb]" value="" disabled="">
+                <input id="ayudatext5" type="text" placeholder="Especificar" name="data[PCT3bb]" value="" disabled=""><br>
+                <input type="radio" name="data[PCT3b]" value="7">No compra este producto<br>
                 <br><br>
         
                 <label for=""><b>6. ¿Qué cantidad de tomate compra usualmente?</b></label><br>
@@ -376,8 +389,8 @@
                 <input type="radio" name="data[PCT3c]" value="3">3 lb<br>
                 <input type="radio" name="data[PCT3c]" value="4">Mayor a 2 lb<br>
                 <input type="radio" name="data[PCT3c]" value="5" onclick="habilitar6()">Otro:
-                <input type="text" id="ayudatext6" placeholder="Especificar" name="data[PCT3cc]" value="" disabled="">
-                
+                <input type="text" id="ayudatext6" placeholder="Especificar" name="data[PCT3cc]" value="" disabled=""><br>
+                <input type="radio" name="data[PCT3c]" value="7">No compra este producto<br>
                 <br><br>
         
     
@@ -441,6 +454,11 @@
                         <td><input type="radio" name="data[BM1a]" value="5"></td>
                         <td><input type="radio" name="data[BM1b]" value="5"></td>
                     </tr>
+                    <tr>
+                        <td>No compra este producto</td>
+                        <td><input type="radio" name="data[BM1a]" value="6"></td>
+                        <td><input type="radio" name="data[BM1b]" value="6"></td>
+                    </tr>
                 </table>
                 <br><br>
         
@@ -471,6 +489,11 @@
                         <td><input type="radio" name="data[BM2a]" value="4"></td>
                         <td><input type="radio" name="data[BM2b]" value="4"></td>
                     </tr>
+                    <tr>
+                        <td>No compra este producto</td>
+                        <td><input type="radio" name="data[BM2a]" value="5"></td>
+                        <td><input type="radio" name="data[BM2b]" value="5"></td>
+                    </tr>
                 </table>
                 <br><br>
         
@@ -481,7 +504,8 @@
                     <input type="radio" name="data[B]" value="3">Mitad de una mano de banana (12 unidades)<br>
                     <input type="radio" name="data[B]" value="4">Menos de 12 unidades<br>
                     <input type="radio" name="data[B]" value="5" onclick="habilitar7()">Otro:
-                    <input id="ayudatext7" type="text" placeholder="Especificar" name="data[B1]" value="" disabled="">
+                    <input id="ayudatext7" type="text" placeholder="Especificar" name="data[B1]" value="" disabled=""><br>
+                    <input type="radio" name="data[B]" value="6">No compra este producto<br>
                 <br><br>
         
                 <label for=""><b>5. ¿Cuánto compra usualmente de manzana roja?</b></label><br>
@@ -492,7 +516,7 @@
                     <input type="radio" name="data[M]" value="5">Montón de 6 u x 10 Bs<br>
                     <input type="radio" name="data[M]" value="6" onclick="habilitar8()">Otro:
                     <input id="ayudatext8" type="text" placeholder="Especificar" name="data[M1]" value="" disabled="">
-                   
+                    <input type="radio" name="data[M]" value="7">No compra este producto<br>
                 <br><br>
                 
         
@@ -542,6 +566,7 @@
                         <td><input type="radio" name="data[F4]" value="1">Color rojizo con raíces</td>
                         <td><input type="radio" name="data[F4]" value="2">Color rojizo con ojos amarillo</td>
                         <td><input type="radio" name="data[F4]" value="3">Color amarillo con ojos profundos y aspecto arrugado</td>
+                        <td><input type="radio" name="data[F4]" value="4">No compra este producto</td>
                     </tr>
                     
                 </table>
@@ -558,6 +583,7 @@
                         <td><input type="radio" name="data[F5]" value="1">Ovalado con salida del tallo verdoso</td>
                         <td><input type="radio" name="data[F5]" value="2">Ovalado rosado con salida del tallo seco</td>
                         <td><input type="radio" name="data[F5]" value="3">Ovalado rosado, opaco con raíces crecidas</td>
+                        <td><input type="radio" name="data[F5]" value="4">No compra este producto</td>
                     </tr>
 
                 </table>
@@ -574,6 +600,7 @@
                         <td><input type="radio" name="data[F6]" value="1">Ovalado color rojizo con tonalidades verdes</td>
                         <td><input type="radio" name="data[F6]" value="2">Ovalado color rojizo</td>
                         <td><input type="radio" name="data[F6]" value="3">Ovalado color amarillo rojizo  y con arrugas</td>
+                        <td><input type="radio" name="data[F6]" value="4">No compra este producto</td>
                     </tr>
                 </table>
                 <br><br>
@@ -593,6 +620,7 @@
                         <td><input type="radio" name="data[F7]" value="3">Maduro de color amarillo si ninguna peca</td>
                         <td><input type="radio" name="data[F7]" value="4">Maduro con un color amarillento con algunas pecas</td>
                         <td><input type="radio" name="data[F7]" value="5">Muy maduro con manchas negras en el cuerpo</td>
+                        <td><input type="radio" name="data[F7]" value="6">No compra este producto</td>
                     </tr>
 
                 </table>
@@ -613,6 +641,7 @@
                         <td><input type="radio" name="data[F8]" value="3">Maduro de color rojizo</td>
                         <td><input type="radio" name="data[F8]" value="4">Maduro de color rojizo con pocos tonos de amarillo</td>
                         <td><input type="radio" name="data[F8]" value="5">Muy maduro con tonalidades de rojo y amarillo</td>
+                        <td><input type="radio" name="data[F8]" value="6">No compra este producto</td>
                     </tr>
                 </table>
                 <br><br>
