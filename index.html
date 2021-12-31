@@ -733,8 +733,11 @@
         
         } catch (e) {}
         if(total.value==100){
+           document.getElementById("valor100").style.background="#00FF40",
+           document.getElementById("valor100").style.textDecorationColor="white",
            document.getElementById("valor100").value = "Excelente la suma da 100%, verifica que llenaste todos los campos.";
         }else{
+            document.getElementById("valor100").style.background="#FF4467",
             document.getElementById("valor100").value = "La suma aun no llega al 100%, por favor verifica que llenaste todos los campos.";
         }
     }   
