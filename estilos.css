@@ -1,0 +1,60 @@
+*{
+    background: whitesmoke;
+}
+
+h4{
+    background: rgb(79, 153, 223);
+}
+
+#boton{
+    background: cadetblue;
+    color: white;
+}
+
+#tableimagen{
+    border-color: turquoise;
+}
+table{
+    border-color: turquoise;
+}
+#Notas{
+    border-color: red;
+}
+#btnsuma{
+    font-family: 'Times New Roman', Times, serif;
+}
+#valor100{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+}
+#ayudatext{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+}
+#numero1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+}
+#numero2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+}
+#numero3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+}
+#numero4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+}
+#numero5{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+}
+#numero6{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+}
+#p2{
+    background-color: green;
+}
